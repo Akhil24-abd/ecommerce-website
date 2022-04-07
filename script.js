@@ -1,3 +1,10 @@
+if("serviceWorker" in navigator){
+  navigator.serviceWorker.register("https://akhil24-abd.github.io/ecommerce-website/sw.js")
+  .then(()=>{
+     console.log("sw registered")
+  })
+}
+
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 
@@ -47,9 +54,3 @@ document.querySelectorAll('.featured-image-3').forEach(image_3 =>{
   });
 });
 
-if("serviceWorker" in navigator){
-  navigator.serviceWorker.register("https://akhil24-abd.github.io/ecommerce-website/sw.js")
-  .then(()=>{
-     console.log("sw registered")
-  })
-}
