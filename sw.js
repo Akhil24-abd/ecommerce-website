@@ -4,8 +4,8 @@ self.addEventListener('install' , (event)=>{
     caches.open("static")
     .then((Cache)=>{
         Cache.addAll([
-            'https://akhil24-abd.github.io/ecommerce-website/js/script.js',
-           'https://akhil24-abd.github.io/ecommerce-website/',
+
+           'https://akhil24-abd.github.io/ecommerce-website/js/script.js',
            'https://akhil24-abd.github.io/ecommerce-website/images',
             'https://akhil24-abd.github.io/ecommerce-website/index.html',
             'https://akhil24-abd.github.io/ecommerce-website/css/style.css',
