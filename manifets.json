@@ -1,0 +1,18 @@
+{
+    "name": "Nike",
+    "short_name": "Nike",
+    "description": "Progressive Web App feature added in our application",
+    "icons": [
+        {
+            "src":"./images/home-text-1.png",
+            "sizes":"96x96",
+            "type":"image/png"
+        }
+    ],
+    "id":"https://akhil24-abd.github.io/burger-website/",
+    "start_url": "https://akhil24-abd.github.io/burger-website/",
+    "display": "fullscreen",
+    "theme_color": "#00FF00",
+    "background_color": "#FFFFFF",
+    "orientation":"portrait"
+  }
