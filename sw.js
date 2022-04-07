@@ -1,52 +1,50 @@
-self.addEventListener('install' , (event)=>{
-    console.log("service worker is installed")
+self.addEventListener('install', (event) => {
+    console.log("service worker installted")
     event.waitUntil(
-    caches.open("static")
-    .then((Cache)=>{
-        Cache.addAll([
-
-           'https://akhil24-abd.github.io/ecommerce-website/js/script.js',
-           'https://akhil24-abd.github.io/ecommerce-website/images',
-            'https://akhil24-abd.github.io/ecommerce-website/index.html',
-            'https://akhil24-abd.github.io/ecommerce-website/css/style.css',
-            'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css',
-            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.1.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.2.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.3.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.4.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-2.1.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-2.2.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-2.3.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-2.4.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-3.1.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-3.2.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-3.3.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-3.4.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/home-bg-1.jpg',
-            'https://akhil24-abd.github.io/ecommerce-website/images/home-bg-2.jpg',
-            'https://akhil24-abd.github.io/ecommerce-website/images/home-bg-3.jpg',
-            'https://akhil24-abd.github.io/ecommerce-website/images/home-shoe-1.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/home-shoe-2.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/home-shoe-3.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/home-text-1.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/home-text-2.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/home-text-3.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/pic1.jpg',
-            'https://akhil24-abd.github.io/ecommerce-website/images/pic2.jpg',
-            'https://akhil24-abd.github.io/ecommerce-website/images/pic3.jpg',
-            'https://akhil24-abd.github.io/ecommerce-website/images/product-1.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/product-2.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/product-3.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/product-4.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/product-5.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/product-6.png',
-        ]).catch((error)=>{
-            console.log(error)
-        })
+    caches.open('static')
+    .then((cache) => {
+    return cache.addAll(urlsToCache);
     })
     );
-})
+    });
 
+
+    var urlsToCache=['https://akhil24-abd.github.io/ecommerce-website/js/script.js',
+    'https://akhil24-abd.github.io/ecommerce-website/images',
+     'https://akhil24-abd.github.io/ecommerce-website/index.html',
+     'https://akhil24-abd.github.io/ecommerce-website/css/style.css',
+     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css',
+     'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.1.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.2.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.3.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.4.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/f-img-2.1.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/f-img-2.2.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/f-img-2.3.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/f-img-2.4.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/f-img-3.1.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/f-img-3.2.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/f-img-3.3.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/f-img-3.4.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/home-bg-1.jpg',
+     'https://akhil24-abd.github.io/ecommerce-website/images/home-bg-2.jpg',
+     'https://akhil24-abd.github.io/ecommerce-website/images/home-bg-3.jpg',
+     'https://akhil24-abd.github.io/ecommerce-website/images/home-shoe-1.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/home-shoe-2.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/home-shoe-3.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/home-text-1.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/home-text-2.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/home-text-3.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/pic1.jpg',
+     'https://akhil24-abd.github.io/ecommerce-website/images/pic2.jpg',
+     'https://akhil24-abd.github.io/ecommerce-website/images/pic3.jpg',
+     'https://akhil24-abd.github.io/ecommerce-website/images/product-1.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/product-2.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/product-3.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/product-4.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/product-5.png',
+     'https://akhil24-abd.github.io/ecommerce-website/images/product-6.png',
+    ]
 self.addEventListener('activate' , ()=>{
     console.log("sw is Activated")
 })
