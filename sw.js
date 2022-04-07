@@ -22,6 +22,7 @@ self.addEventListener('install' , (event)=>{
             'https://akhil24-abd.github.io/ecommerce-website/images/f-img-3.2.png',
             'https://akhil24-abd.github.io/ecommerce-website/images/f-img-3.3.png',
             'https://akhil24-abd.github.io/ecommerce-website/images/f-img-3.4.png',
+            'https://akhil24-abd.github.io/ecommerce-website/images/home-bg-1.jpg',
             'https://akhil24-abd.github.io/ecommerce-website/images/home-bg-2.jpg',
             'https://akhil24-abd.github.io/ecommerce-website/images/home-bg-3.jpg',
             'https://akhil24-abd.github.io/ecommerce-website/images/home-shoe-1.png',
