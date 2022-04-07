@@ -63,7 +63,6 @@ self.addEventListener('fetch', (event) => {
         }
 
         // No cache match, we attempt to fetch it from the network
-        return fetch(event.request);
       }
     )
   );
