@@ -11,7 +11,7 @@ self.addEventListener('install' , (event)=>{
             'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css',
            'https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap',
             'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.1.png',
-            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.2.png/',
+            'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.2.png',
             'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.3.png',
             'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.4.png',
             'https://akhil24-abd.github.io/ecommerce-website/images/f-img-2.1.png',
