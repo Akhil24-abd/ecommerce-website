@@ -1,15 +1,6 @@
-self.addEventListener('install', (event) => {
-    console.log("service worker installted")
-    event.waitUntil(
-    caches.open('static')
-    .then((cache) => {
-    return cache.addAll(urlsToCache);
-    })
-    );
-    });
 
-
-    var urlsToCache=['https://akhil24-abd.github.io/ecommerce-website/js/script.js',
+    var urlsToCache=[
+    'https://akhil24-abd.github.io/ecommerce-website/js/script.js',
     'https://akhil24-abd.github.io/ecommerce-website/images',
      'https://akhil24-abd.github.io/ecommerce-website/index.html',
      'https://akhil24-abd.github.io/ecommerce-website/css/style.css',
@@ -45,6 +36,17 @@ self.addEventListener('install', (event) => {
      'https://akhil24-abd.github.io/ecommerce-website/images/product-5.png',
      'https://akhil24-abd.github.io/ecommerce-website/images/product-6.png',
     ]
+
+    self.addEventListener('install', (event) => {
+        console.log("service worker installted")
+        event.waitUntil(
+        caches.open('static')
+        .then((cache) => {
+        return cache.addAll(urlsToCache);
+        })
+        );
+        });
+    
 self.addEventListener('activate' , ()=>{
     console.log("sw is Activated")
 })
