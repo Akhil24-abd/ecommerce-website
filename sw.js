@@ -4,12 +4,12 @@ self.addEventListener('install' , (event)=>{
     caches.open("static")
     .then((Cache)=>{
         Cache.addAll([
-           '/',
            'https://akhil24-abd.github.io/ecommerce-website/',
            'https://akhil24-abd.github.io/ecommerce-website/images',
             'https://akhil24-abd.github.io/ecommerce-website/index.html',
             'https://akhil24-abd.github.io/ecommerce-website/style.css',
             'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css',
+           'https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap',
             'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.1.png',
             'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.2.png/',
             'https://akhil24-abd.github.io/ecommerce-website/images/f-img-1.3.png',
@@ -40,7 +40,6 @@ self.addEventListener('install' , (event)=>{
             'https://akhil24-abd.github.io/ecommerce-website/images/product-4.png',
             'https://akhil24-abd.github.io/ecommerce-website/images/product-5.png',
             'https://akhil24-abd.github.io/ecommerce-website/images/product-6.png',
-            'https://akhil24-abd.github.io/ecommerce-website/js/script'
         ]).catch((error)=>{
             console.log(error)
         })
