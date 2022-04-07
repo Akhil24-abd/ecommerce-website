@@ -46,3 +46,12 @@ document.querySelectorAll('.featured-image-3').forEach(image_3 =>{
     document.querySelector('.big-image-3').src = src;
   });
 });
+
+<script type="text/javascript">
+    if("serviceWorker" in navigator){
+   navigator.serviceWorker.register("https://akhil24-abd.github.io/ecommerce-website//sw.js")
+   .then(()=>{
+      console.log("sw registered")
+   })
+}
+</script>
