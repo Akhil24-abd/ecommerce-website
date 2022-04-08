@@ -1,11 +1,12 @@
 
     var urlsToCache=[
-    "/manifest.json",
     "/images",
      "/index.html",
      "/css/style.css",
      "/sw.js",
      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css",
+     "https://cdnjs.com/libraries/font-awesome",
+      "https://fonts.google.com/specimen/Nunito?query=nunito",
      "/images/f-img-1.1.png",
      "/images/f-img-1.2.png",
      "/images/f-img-1.3.png",
