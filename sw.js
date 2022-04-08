@@ -1,8 +1,8 @@
 var urlsToCache=[
      "https://akhil24-abd.github.io/ecommerce-website/",
-     "/index.html",
-     "/css/style.css",
-     "/js/script/js",
+     "https://akhil24-abd.github.io/ecommerce-website/index.html",
+     "https://akhil24-abd.github.io/ecommerce-website/css/style.css",
+     "https://akhil24-abd.github.io/ecommerce-website/js/script/js",
      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css",
      "https://cdnjs.com/libraries/font-awesome",
       "https://fonts.google.com/specimen/Nunito?query=nunito",
