@@ -4,7 +4,7 @@
     "description": "Progressive Web App feature added in our application",
     "icons": [
         {
-            "src":"./images/home-bg-1.jpg",
+            "src":"/images/home-bg-1.jpg",
             "sizes":"96x96",
             "type":"image/png"
         }
