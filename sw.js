@@ -1,9 +1,12 @@
 var urlsToCache=[
+    "/",
      "/index.html",
      "/css/style.css",
+     "/js/script/js",
      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css",
      "https://cdnjs.com/libraries/font-awesome",
       "https://fonts.google.com/specimen/Nunito?query=nunito",
+      "https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap",
      "/images/f-img-1.1.png",
      "/images/f-img-1.2.png",
      "/images/f-img-1.3.png",
